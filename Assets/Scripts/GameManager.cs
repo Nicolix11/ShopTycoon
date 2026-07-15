@@ -6,9 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance {get; private set;}
 
-    private List<MoneyGenerator> moneyGeneratorsList;
+    [SerializeField] private List<MoneyGenerator> moneyGeneratorsList;
 
-    private int moneyBalance;
+    [SerializeField] private int moneyBalance;
     
     
     private void Awake()

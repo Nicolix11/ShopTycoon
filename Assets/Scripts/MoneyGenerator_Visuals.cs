@@ -5,6 +5,7 @@ public class MoneyGenerator_Visuals : MonoBehaviour
 {
     [SerializeField] private MoneyGenerator moneyGenerator;
     
+    [Header("Object Levels")]
     [SerializeField] private GameObject upgrade1;
     [SerializeField] private GameObject upgrade2;
     [SerializeField] private GameObject upgrade3;
@@ -17,7 +18,7 @@ public class MoneyGenerator_Visuals : MonoBehaviour
 
     private void MoneyGenerator_BuyedUpgrade(object sender, EventArgs e)
     {
-        UpdateMoneyGeneratorVisual();
+        //UpdateMoneyGeneratorVisual();
     }
 
     private void UpdateMoneyGeneratorVisual()
