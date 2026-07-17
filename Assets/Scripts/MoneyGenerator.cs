@@ -9,7 +9,7 @@ public class MoneyGenerator : MonoBehaviour
     [SerializeField] private float upgradePriceMultiplier;
     [SerializeField] private float moneyPerUpgrade = 2;
 
-    private int level = 0;
+    [SerializeField] private int level = 0;
 
 
     private void Start()
@@ -24,9 +24,9 @@ public class MoneyGenerator : MonoBehaviour
         return income;
     }
 
-    private float CalculateIncomePerSecond()
+    public int CalculateIncomePerSecond()
     {
-        return moneyPerUpgrade * level;
+        return Mathf.RoundToInt(moneyPerUpgrade * level);
     }
 
     public bool CanBuyUpgrade()
@@ -44,6 +44,8 @@ public class MoneyGenerator : MonoBehaviour
     private void UpgradeMoneyGenerator()
     {
         level++;
+        
+        GameManager.instance.PayForUpgrade(CalculateUpgradePrice());
         
         buyedUpgrade?.Invoke(this, EventArgs.Empty);
     }

@@ -262,7 +262,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 311989927}
+    m_TransformParent: {fileID: 1018020245}
     m_Modifications:
     - target: {fileID: 1617142962580550324, guid: a6fe217ee8a54004aa9e03c6316b9644, type: 3}
       propertyPath: m_Name
@@ -308,6 +308,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: a6fe217ee8a54004aa9e03c6316b9644, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: a6fe217ee8a54004aa9e03c6316b9644, type: 3}
+      propertyPath: moneyPerUpgrade
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -318,13 +326,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1740171875137096965, guid: a6fe217ee8a54004aa9e03c6316b9644, type: 3}
   m_PrefabInstance: {fileID: 288457022}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &288457024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8539509382246111112, guid: a6fe217ee8a54004aa9e03c6316b9644, type: 3}
+  m_PrefabInstance: {fileID: 288457022}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ae28cf5c37a934aa50b44791322e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
 --- !u!1001 &290899071
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 311989927}
+    m_TransformParent: {fileID: 1018020245}
     m_Modifications:
     - target: {fileID: 1617142962580550324, guid: 062ca4bde39f53e4aaf3c522e6483385, type: 3}
       propertyPath: m_Name
@@ -370,6 +389,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: 062ca4bde39f53e4aaf3c522e6483385, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: 062ca4bde39f53e4aaf3c522e6483385, type: 3}
+      propertyPath: moneyPerUpgrade
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -380,6 +407,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1740171875137096965, guid: 062ca4bde39f53e4aaf3c522e6483385, type: 3}
   m_PrefabInstance: {fileID: 290899071}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &290899073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8539509382246111112, guid: 062ca4bde39f53e4aaf3c522e6483385, type: 3}
+  m_PrefabInstance: {fileID: 290899071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ae28cf5c37a934aa50b44791322e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
 --- !u!1 &311989926
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311989927}
   m_Layer: 0
-  m_Name: Umgebung
+  m_Name: Enviroment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,9 +449,6 @@ Transform:
   m_Children:
   - {fileID: 46791889}
   - {fileID: 630956321}
-  - {fileID: 288457023}
-  - {fileID: 436958830}
-  - {fileID: 290899072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
@@ -723,7 +758,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 311989927}
+    m_TransformParent: {fileID: 1018020245}
     m_Modifications:
     - target: {fileID: 1617142962580550324, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
       propertyPath: m_Name
@@ -735,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1740171875137096965, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1740171875137096965, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -769,6 +804,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539509382246111112, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
+      propertyPath: moneyPerUpgrade
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -779,6 +822,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1740171875137096965, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
   m_PrefabInstance: {fileID: 436958829}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &436958831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8539509382246111112, guid: e0668fd68cbd9f849aa86d5bd5c6de2e, type: 3}
+  m_PrefabInstance: {fileID: 436958829}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ae28cf5c37a934aa50b44791322e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
 --- !u!1 &533616570
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,8 +862,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bd41f109590e445b4d5b3dbe9fb698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  moneyGeneratorsList: []
+  moneyGeneratorsList:
+  - {fileID: 288457024}
+  - {fileID: 436958831}
+  - {fileID: 290899073}
   moneyBalance: 0
+  updateTime: 1
 --- !u!4 &533616572
 Transform:
   m_ObjectHideFlags: 0
@@ -934,6 +992,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1018020244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018020245}
+  m_Layer: 0
+  m_Name: MoneyGenerators
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018020245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018020244}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.648776, y: 0, z: -0.8319616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 288457023}
+  - {fileID: 436958830}
+  - {fileID: 290899072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159380742
@@ -1429,5 +1521,6 @@ SceneRoots:
   - {fileID: 533616572}
   - {fileID: 1761928316}
   - {fileID: 311989927}
+  - {fileID: 1018020245}
   - {fileID: 1901464216}
   - {fileID: 1159380745}

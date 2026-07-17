@@ -5,7 +5,8 @@ using UnityEngine;
 public class UI_RessourcesScreen : MonoBehaviour
 {
     [SerializeField] private TMP_Text moneyBalanceText;
-
+    [SerializeField] private TMP_Text incomePerSecond;
+    
     [SerializeField] private float updateTime = 0.2f;
     private float updateTimeCounter;
 
@@ -27,6 +28,8 @@ public class UI_RessourcesScreen : MonoBehaviour
         {
             moneyBalanceText.text = GameManager.instance.GetMoneyBalance().ToString();
 
+            //incomePerSecond.text = GameManager.instance.GetLastGeneratedIncome().ToString();
+                
             updateTimeCounter = 0f;
         }
     }
